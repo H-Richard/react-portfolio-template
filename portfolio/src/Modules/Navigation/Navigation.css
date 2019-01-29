@@ -28,7 +28,7 @@
 .Navigation-logo a {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .Navigation-list a {
@@ -73,7 +73,9 @@
     left: 20px;
   }
   .Navigation-logo a {
+    font-size: 1.5rem;
     height: 100%;
-    margin-top: -6px;
+    margin-left: 3px;
+    margin-top: -2px;
   }
 }
