@@ -4,11 +4,17 @@ import './Navigation.css';
 
 import DrawerButton from '../Drawer/DrawerButton';
 
-const Navigation = props => (
+const Navigation = props => {
+  let drawerClasses = 'Navigation-nav';
+  if (props.show) {
+    drawerClasses = 'Navigation-nav open'
+  };
+
+return (
   <header className="Navigation">
     <nav className="Navigation-nav">
       <div className="Navigation-logo">
-        <DrawerButton />
+        <DrawerButton click={props.DrawerNavClickHandler}/>
         <a href="/">LOGO HERE</a>
       </div>
       <div className="Navigation-list">
@@ -24,5 +30,6 @@ const Navigation = props => (
     </nav>
   </header>
 );
+};
 
 export default Navigation;

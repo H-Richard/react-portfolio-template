@@ -4,20 +4,22 @@
   width: 40%;
   height: 100%;
   background-color: black;
+  z-index: 500;
 }
 
 .Navigation-list {
   display: flex;
-  position: absolute;
-  top: 40%;
   right: 10%;
+  position: absolute;
+  justify-content: center;
+  height: 100%;
   text-align: right;
+  flex-direction: column;
 }
 
 .Navigation-logo {
-  left: 30%;
+  right: 10%;
   display: flex;
-  width: 100%;
   position: absolute;
   top: 5%;
   font-size: 2rem;
@@ -46,4 +48,32 @@
 .Navigation-list a:hover,
 .Navigation-list a:active {
   color: tomato;
+}
+
+@media (max-width: 768px) {
+
+
+  .Navigation-list {
+    display: none;
+    position: fixed;
+    height: 100px;
+  }
+  .Navigation {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    justify-content: row;
+    align-items: left;
+  }
+
+  .Navigation-logo {
+    position: fixed;
+    height: 60px;
+    top: 20px;
+    left: 20px;
+  }
+  .Navigation-logo a {
+    height: 100%;
+    margin-top: -6px;
+  }
 }
