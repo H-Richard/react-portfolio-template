@@ -2,11 +2,15 @@ import React from "react";
 
 import './Navigation.css';
 
+import DrawerButton from '../Drawer/DrawerButton';
+
 const Navigation = props => (
   <header className="Navigation">
     <nav className="Navigation-nav">
-      <div></div>
-      <div className="Navigation-logo"><a href="/">LOGO HERE</a></div>
+      <div className="Navigation-logo">
+        <DrawerButton />
+        <a href="/">LOGO HERE</a>
+      </div>
       <div className="Navigation-list">
         <ul>
           <li><a href="">About</a></li>

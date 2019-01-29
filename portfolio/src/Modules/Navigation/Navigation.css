@@ -15,9 +15,11 @@
 }
 
 .Navigation-logo {
+  left: 30%;
+  display: flex;
+  width: 100%;
   position: absolute;
   top: 5%;
-  right: 10%;
   font-size: 2rem;
 }
 
@@ -38,7 +40,7 @@
 }
 
 .Navigat-list li {
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .Navigation-list a:hover,
